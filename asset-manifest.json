@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.34de6062.chunk.css",
-    "main.js": "/static/js/main.cd1279ee.chunk.js",
-    "main.js.map": "/static/js/main.cd1279ee.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.64129147.js",
-    "runtime-main.js.map": "/static/js/runtime-main.64129147.js.map",
-    "static/js/2.54a48e94.chunk.js": "/static/js/2.54a48e94.chunk.js",
-    "static/js/2.54a48e94.chunk.js.map": "/static/js/2.54a48e94.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3a908c6725c860ba9ed32f21d8d451d5.js": "/precache-manifest.3a908c6725c860ba9ed32f21d8d451d5.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.34de6062.chunk.css.map": "/static/css/main.34de6062.chunk.css.map"
+    "main.css": "/react-chart-race/static/css/main.34de6062.chunk.css",
+    "main.js": "/react-chart-race/static/js/main.f1c4bb09.chunk.js",
+    "main.js.map": "/react-chart-race/static/js/main.f1c4bb09.chunk.js.map",
+    "runtime-main.js": "/react-chart-race/static/js/runtime-main.960f09b3.js",
+    "runtime-main.js.map": "/react-chart-race/static/js/runtime-main.960f09b3.js.map",
+    "static/js/2.54a48e94.chunk.js": "/react-chart-race/static/js/2.54a48e94.chunk.js",
+    "static/js/2.54a48e94.chunk.js.map": "/react-chart-race/static/js/2.54a48e94.chunk.js.map",
+    "index.html": "/react-chart-race/index.html",
+    "precache-manifest.9188e73d7b68fc098060c4c32ff052b8.js": "/react-chart-race/precache-manifest.9188e73d7b68fc098060c4c32ff052b8.js",
+    "service-worker.js": "/react-chart-race/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/react-chart-race/static/css/main.34de6062.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.64129147.js",
+    "static/js/runtime-main.960f09b3.js",
     "static/js/2.54a48e94.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.cd1279ee.chunk.js"
+    "static/js/main.f1c4bb09.chunk.js"
   ]
 }
