@@ -7,7 +7,8 @@ import Stack from '@mui/material/Stack';
 import ReplayCircleFilledIcon from '@mui/icons-material/ReplayCircleFilled';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import StopCircleIcon from '@mui/icons-material/StopCircle';
-const dataUrl = "/data/category-brands.csv";
+import dataUrl from './data/region.csv'
+
 const numOfBars = 12;
 const numOfSlice = 10;
 const chartMargin = {
@@ -34,7 +35,7 @@ function App() {
   }
   const playing = chartRef.current ? chartRef.current.playing : false;
   const [_, forceUpdate] = useState();
-  console.log('keyframes', keyframes)
+  
   return (
     <div style={{ margin: "0 2em" }}>
             <h1>Population growth per country 1950 to 2021</h1>
