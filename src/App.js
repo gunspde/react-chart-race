@@ -34,6 +34,7 @@ function App() {
   }
   const playing = chartRef.current ? chartRef.current.playing : false;
   const [_, forceUpdate] = useState();
+  console.log('keyframes', keyframes)
   return (
     <div style={{ margin: "0 2em" }}>
             <h1>Population growth per country 1950 to 2021</h1>

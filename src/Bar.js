@@ -6,14 +6,20 @@ import { useState } from "react/cjs/react.production.min";
 const Bar = ({ color, x, y, width, height, name, value }) => {
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+  }
   const text = `${name} ${numberWithCommas(value)}`;
-  
-  const customColor = color === '#4e79a7' && '#DDA0DD' || color === '#f28e2c' && '#D8BFD8'
-                    || color === '#e15759' && '#F0E68C' || color === '#76b7b2' && '#9370DB'
-                    || color === '#59a14f' && '#DDA0DD' || color === '#edc949' && '#D8BFD8'
-                    || color === '#af7aa1' && '#F0E68C' || color === '#9c755f' && '#9370DB'
-                    || color === '#bab0ab' && '#DDA0DD' || '#DDA0DD'
+  const customColor = name === 'Bangladesh 🇧🇩' && '#483D8B'
+    || name === 'Brazil 🇧🇷' && '#DAA520'
+    || name === 'China 🇨🇳' && '#483D8B'
+    || name === 'France 🇫🇷' && '#9370DB'
+    || name === 'Germany 🇩🇪' && '#9370DB'
+    || name === 'India 🇮🇳' && '#483D8B'
+    || name === 'Indonesia 🇮🇩' && '#483D8B'
+    || name === 'Italy 🇮🇹' && '#9370DB'
+    || name === 'Japan 🇯🇵' && '#483D8B'
+    || name === 'Russia 🇷🇺' && '#9370DB'
+    || name === 'United Kingdom 🇬🇧' && '#9370DB'
+    || name === 'United States 🇺🇸' && '#9370DB'
   
   return (
     <React.Fragment>

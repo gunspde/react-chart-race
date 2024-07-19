@@ -27,7 +27,6 @@ const RacingBarGroup = forwardRef(({ frameData, xScale, yScale, colorScale }, re
   return transitions.map(({ item, props }) => {
     const { y, value, width } = props;
     const { name } = item;
-  
     return (
       <AnimatedBar
         x={xScale(0)}
