@@ -2,6 +2,7 @@
   "name": "bar-chart-race",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gunspde.github.io/react-chart-race/",
   "dependencies": {
     "@emotion/react": "^11.12.0",
     "@emotion/styled": "^11.12.0",

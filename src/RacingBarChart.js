@@ -169,7 +169,8 @@ const RacingBarChart = React.forwardRef(({
                 color: `${item.color}`,
                 border: `${item.color}`
               },
-        }}
+              }}
+            
             />
           
           ))) : <p style={{ color: "red", marginTop: '0.5rem' }}>Please push PLAY before filter</p>
