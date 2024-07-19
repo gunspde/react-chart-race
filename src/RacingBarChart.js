@@ -87,6 +87,7 @@ const RacingBarChart = React.forwardRef(({
   });
   const frame = keyframes[frameIdx];
   const { date: currentDate, data: frameData } = frame;
+  const sumTotalValues = frameData.reduce((a, b) => a + (b['value'] || 0), 0)
   const values = frameData.map(({ value }) => value);
   const xMax = width - margin.left - margin.right;
   const yMax = height - margin.top - margin.bottom;
@@ -121,8 +122,12 @@ const RacingBarChart = React.forwardRef(({
         .range(schemeTableau10),
     [nameList]
   );
+
   const dateInYear = currentDate.getFullYear();
-  return (
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+return (
     <svg width={width} height={height}>
       <Group top={margin.top} left={margin.left} key={animationKey}>
         <RacingBarGroup
@@ -134,11 +139,19 @@ const RacingBarChart = React.forwardRef(({
         />
         <text
           textAnchor="end"
-          style={{ fontSize: "1.25em" }}
+          style={{ fontSize: "4.25em" }}
+          x={xMax}
+          y={500}
+        >
+          {dateInYear}
+        </text>
+         <text
+          textAnchor="end"
+          style={{ fontSize: "2.25em" }}
           x={xMax}
           y={yMax}
         >
-          {dateInYear}
+         Total: {numberWithCommas(sumTotalValues.toFixed())}
         </text>
         <line
           x1={0}

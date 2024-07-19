@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import RacingBarChart from "./RacingBarChart";
 import useKeyframes from "./useKeyframes";
 import useWindowSize from "./useWindowSize";
-
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import ReplayCircleFilledIcon from '@mui/icons-material/ReplayCircleFilled';
+import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
+import StopCircleIcon from '@mui/icons-material/StopCircle';
 const dataUrl = "/data/category-brands.csv";
 const numOfBars = 12;
 const numOfSlice = 10;
@@ -32,21 +36,20 @@ function App() {
   const [_, forceUpdate] = useState();
   return (
     <div style={{ margin: "0 2em" }}>
-      <h1>Bar Chart Race Demo</h1>
-      <section>
-        This is a bar chart race of the value (in million dollars) of top global brands, during 2000 ~ 2019.
-        <br/>
-        It's inspired by <a target="_blank" rel="noopener noreferrer" href="https://observablehq.com/@d3/bar-chart-race">the work of Mike Bostock</a>, which is based on pure d3.
-        I tried to make a similar one, but using React, <a target="_blank" rel="noopener noreferrer" href="https://www.react-spring.io/">react-spring</a> and <a href="https://vx-demo.now.sh/" rel="noopener noreferrer" target="_blank">vx</a>.
-        <br/>
-        source: <a rel="noopener noreferrer" href="https://github.com/chenesan/bar-chart-race" target="_blank">https://github.com/chenesan/bar-chart-race</a>
-        <br/>
-      </section>
-      <div style={{ paddingTop: "1em"}}>
-        <button onClick={handleReplay}>replay</button>
-        <button onClick={playing ? handleStop : handleStart}>
-          { playing ? 'stop' : 'start' }
-        </button>
+            <h1>Population growth per country 1950 to 2021</h1>
+      
+      <div style={{ paddingTop: "1em" , marginBottom: "1rem"}}>
+        <Stack direction="row" spacing={2} style={{marginBottom: "1rem"}}>
+          <Button variant="outlined" onClick={handleReplay} endIcon={<ReplayCircleFilledIcon />}>
+            Try again
+          </Button>
+          <Button variant="contained" onClick={playing ? handleStop : handleStart}
+            endIcon={playing ? <PlayCircleFilledIcon /> : <StopCircleIcon />}
+            color={!playing? "success":"error"}
+          >
+                { playing ? 'Pause' : 'Play' }
+          </Button>
+        </Stack>
         {keyframes.length > 0 && (
           <RacingBarChart
             keyframes={keyframes}
@@ -60,9 +63,7 @@ function App() {
           />
         )}
       </div>
-      <p>
-        <a target="_blank" rel="noopener noreferrer" href="https://icons-for-free.com/bar+chart+black+background+chart+data+diagram+graph+icon-1320086870829698051/">Favicon</a> by Alla Afanasenko <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer"> CC BY </a>
-      </p>
+
     </div>
   );
 }
