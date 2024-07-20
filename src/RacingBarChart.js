@@ -95,7 +95,7 @@ const RacingBarChart = React.forwardRef(({
   });
   const frame = keyframes[frameIdx];
   const { date: currentDate, data: frameData } = frame;
-  const sumTotalValues = frameData.reduce((a, b) => a + (b['value'] || 0), 0)
+  const sumTotalValues = dataRegion.filter((elem) => !regionContinent.find(({ name, active }) => elem.category === name && !active)).reduce((a, b) => a + (b['value'] || 0), 0)
   const values = frameData.map(({ value }) => value);
   const xMax = width - margin.left - margin.right;
   const yMax = height - margin.top - margin.bottom;
