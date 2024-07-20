@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-chart-race/static/css/main.34de6062.chunk.css",
-    "main.js": "/react-chart-race/static/js/main.0b0dca23.chunk.js",
-    "main.js.map": "/react-chart-race/static/js/main.0b0dca23.chunk.js.map",
+    "main.js": "/react-chart-race/static/js/main.affdd137.chunk.js",
+    "main.js.map": "/react-chart-race/static/js/main.affdd137.chunk.js.map",
     "runtime-main.js": "/react-chart-race/static/js/runtime-main.960f09b3.js",
     "runtime-main.js.map": "/react-chart-race/static/js/runtime-main.960f09b3.js.map",
     "static/js/2.18c699f3.chunk.js": "/react-chart-race/static/js/2.18c699f3.chunk.js",
     "static/js/2.18c699f3.chunk.js.map": "/react-chart-race/static/js/2.18c699f3.chunk.js.map",
     "index.html": "/react-chart-race/index.html",
-    "precache-manifest.723eb44f9271c9c02d28e0498d3e7403.js": "/react-chart-race/precache-manifest.723eb44f9271c9c02d28e0498d3e7403.js",
+    "precache-manifest.e60e937f0d2519a18a32dbe2914944f1.js": "/react-chart-race/precache-manifest.e60e937f0d2519a18a32dbe2914944f1.js",
     "service-worker.js": "/react-chart-race/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/react-chart-race/static/css/main.34de6062.chunk.css.map",
     "static/media/region.csv": "/react-chart-race/static/media/region.f0729b97.csv"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.960f09b3.js",
     "static/js/2.18c699f3.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.0b0dca23.chunk.js"
+    "static/js/main.affdd137.chunk.js"
   ]
 }
